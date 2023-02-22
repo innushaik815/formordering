@@ -1,0 +1,118 @@
+body{
+    margin:0;
+}
+
+header{
+    background-color: navy;
+    border-bottom: 3px solid orange;
+    padding: 10px;
+    color: cyan;
+}
+
+form{
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid navy;
+    width: 700px;
+    height: auto;
+    box-shadow: 0px 2px 7px orange;
+}
+
+div{
+    margin: 5px auto;
+    padding: 10px;
+}
+
+
+input[type='submit']{
+    background-color: navy;
+    border-radius: 2px;
+    border: 2px solid orange;
+    color: cyan;
+    padding: 5px;
+}
+
+textarea{
+    margin-top:15px;
+    width: 60%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="product"],
+input[type="date"],
+input[type="Address"],
+input[type="number"]{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 230px;
+  height: 20px;
+  border: none;
+  border-top: transparent;
+  border-bottom: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.1s ease;
+}
+
+.add .plus{
+    padding: 1px 4px;
+    border-radius:100%;
+    border: 2px black solid;
+    width: 6px;
+    background-color: blueviolet;
+}
+.add .plus{
+    padding: 1px 4px;
+    border-radius:100%;
+    border: 2px black solid;
+    width: 6px;
+    background-color: blueviolet;
+}
+a{
+    text-decoration: none;
+}
+table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		th {
+			background-color: #f2f2f2;
+		}
+		
+		@media screen and (max-width: 600px) {
+			table {
+				display: block;
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+			
+			th, td {
+				display: inline-block;
+				border: none;
+			}
+			
+			td {
+				border-bottom: 1px solid #ddd;
+			}
+			
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+		}
+        #table {
+            max-width: 100%;
+            overflow-x: auto;
+        }

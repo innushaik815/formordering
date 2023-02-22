@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <!-- Link Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kI1Q7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add the viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="datePicker()">
+
+    <!-- Create order form with various fields as mentioned in README file -->
+    <header>
+        <h1 class="text-center mt-3">Pizza Order App</h1>
+    </header>
+    <div class="container">
+        <form id="feedbackForm" action="#" onsubmit="return submitFeedback()">
+            <h3 class="mt-5">Please fill up Order details</h3>
+
+            <div class="form-group">
+                <label for="customerName"><strong>Customer Name:</strong></label>
+                <input type="text" class="form-control" id="customerName" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><strong>Email Id:</strong></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Product Purchased" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNo"><strong>Contact Number:</strong></label>
+                <input maxlength="10" type="tel" class="form-control" id="contactNo" pattern="[0-9]{10}" required placeholder="your 10 digit number">
+            </div>
+            <div class="form-group">
+                <label for="address"><strong>Address:</strong></label>
+                <input maxlength="70" type="text" class="form-control" id="address" required placeholder="Enter Address"></input>
+            </div>
+        
+            <div class="mb-3 form-group">
+                <label for="orderDate" class="form-label">Order Date</label>
+                <input type="date" id="orderDate" name="orderDate" class="form-control" required max="2023-02-28">
+            </div>
+
+            <div class="add my-4">
+                <div>
+                    add order: <span id="addOrder" class="plus">+</span>
+                </div>
+            </div>
+
+            <div id="table">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Category Name</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="tablerow">
+                            <td>
+                                <select id="category">
+                                    <option value="">Select a category</option>
+                                    <option value="pizza">Pizza</option>
+                                    <option value="beverages">Beverages</option>
+                                    <option value="garlic-bread">Garlic Bread</option>
+                                  </select> 
+                            </td>
+                            <td>
+                                <select id="itemname">
+                                <option value="">Select an item</option>
+                                </select>
+                            </td>
+                            <td><input type="number" id="itemprice" disabled></td>
+                            <td><input type="number" id="itemquantity"></td>
+                            <td><input type="number" id="totalitemprice" disabled ></td>
+                        </tr> -->
+    
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="table">
+
+            </div>
+
+        
+        <!-- <div class="totalitemprice">Total: $</div> -->
+        <div>
+            Total Amount 
+            <div >
+                <input type="number" readonly id="total" placeholder="0" >
+            </div>
+        </div>
+        <div>
+            <input type="submit" onclick="submitOrder()" value="Submit">
+        </div>
+    </form>
+</body>
+<script src="./js/script.js"></script>
+</html>
+
